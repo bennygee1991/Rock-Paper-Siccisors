@@ -1,0 +1,36 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+body {
+    box-sizing: border-box;
+    background: #f14907;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game__container {
+    height: 50vh;
+    width: 50vw; 
+    
+}
+
+button {
+    background: black;
+    color: #f14907;
+    font-size: 3rem;
+}
+
+button:hover,
+button:active {
+    background: #f14907;
+    color: black;
+}
+
+
+.results {
+    background: black;
+    color: white;
+}
