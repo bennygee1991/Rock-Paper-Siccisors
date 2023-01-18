@@ -10,17 +10,21 @@
 <body>
     <main class="game__container">
         <div class="top">
-            <button class="buttons__game rock">Rock</button>
-            <button class="buttons__game paper">Paper</button>
-            <button class="buttons__game scissors">Scissors</button>
+            <button class="buttons__game" data-selection="rock">Rock</button>
+            <button class="buttons__game" data-selection="paper">Paper</button>
+            <button class="buttons__game" data-selection="scissors">Scissors</button>
         </div>
        
         <div class="results">
-                <p class="player-score">Your score is: 0</p>
-                <p class="computer-score">The computer score is: 0</p>
-                <p class="result-tie">Tie rounds: 0</p>
+                <p class="player-score">Your score is <span class="result__score-human" data-your-score>0</span></p>
+                <p class="computer-score">The computer score is <span class="result__score-human" data-computer-score>0</span></p>
+                <p class="result-tie">Tie rounds <span class="result__score-tie" data-tie-score>0</span></p>
         </div>
         
+        <div>
+            <p class="player-choice" data-player-choice></p>
+            <p class="computer-choice" data-computer-choice></p>
+        </div>
     </main>
     <script src="./script.js"></script>
 </body>
